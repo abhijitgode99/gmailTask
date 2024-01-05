@@ -1,0 +1,28 @@
+
+<div class="container">
+<mat-toolbar color="primary">
+  <mat-toolbar-row id="color">
+    <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <h1 id="heading">Mail Box</h1>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav opened="ture">
+      <mat-nav-list>
+        <button routerLink="allmatches" mat-button><a mat-list-item> All Matches</a> </button><br>  
+      </mat-nav-list>
+      <mat-nav-list>  
+        <button routerLink="savedmatches" mat-button><a mat-list-item> Saved Matches </a></button>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div style="height: 88vh;">
+        <router-outlet>
+
+        </router-outlet>
+      </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+</div>

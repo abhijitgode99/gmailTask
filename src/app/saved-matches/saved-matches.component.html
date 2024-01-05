@@ -1,0 +1,24 @@
+<h4>SAVED MATCHES</h4>
+<div class="card">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+            <th> </th>
+          <th>id</th>
+          <th>city, state, country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let venue of newArray">
+            <td>
+                <i class="fas fa-heart fa-lg mx-2 my-2"></i>
+            </td>
+          <td>{{ venue.id }}</td>
+          <!-- Add columns for 'name' and 'city, state, country' if needed -->
+          <!-- <td>{{ venue.name }}</td> -->
+     
+          <td>{{ venue.city }}, {{ venue.state }}, {{ venue.country }}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>

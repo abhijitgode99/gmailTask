@@ -1,0 +1,21 @@
+
+.table{
+    padding-left: 500px;
+}
+.card{
+    width: 1000px;
+    margin-left: 200px;
+}
+h4{
+    margin-left: 200px;
+    padding-left: 300px;
+    background-color: rgb(255, 140, 0);
+    color: rgb(9, 9, 45);
+    width: 1000px;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: xx-large;
+}
+i{
+    color: black;
+}
